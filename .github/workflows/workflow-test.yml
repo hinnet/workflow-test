@@ -25,5 +25,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
+  Second-job:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "This is the second job."
+
 # Help: https://docs.github.com/en/actions/reference/workflows-and-actions
 # Existing Actions: https://github.com/marketplace?type=actions
